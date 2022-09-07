@@ -13,8 +13,8 @@ export const getSearchMovieService = (value, page) => {
             .then((res) => {
                 dispatch(getSearchMoviesActionSuccess(res.data));
             })
-            .catch((err) => {
-                dispatch(getSearchMoviesActionError(err));
+            .catch(() => {
+                dispatch(getSearchMoviesActionError());
             });
     };
 };

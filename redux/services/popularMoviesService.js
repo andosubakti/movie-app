@@ -8,8 +8,8 @@ export const getPopularMoviesService = (params) => {
             .then((res) => {
                 dispatch(getPopularMoviesActionSuccess(res.data));
             })
-            .catch((err) => {
-                dispatch(getPopularMoviesActionError(err));
+            .catch(() => {
+                dispatch(getPopularMoviesActionError());
             });
     };
 };

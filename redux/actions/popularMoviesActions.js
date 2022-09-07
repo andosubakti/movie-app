@@ -9,7 +9,6 @@ export const getPopularMoviesActionSuccess = (data) => ({
     payload: data,
 });
 
-export const getPopularMoviesActionError = (data) => ({
-    type: GET_POPULAR_MOVIES_ERROR,
-    payload: data,
+export const getPopularMoviesActionError = () => ({
+    type: GET_POPULAR_MOVIES_ERROR
 });

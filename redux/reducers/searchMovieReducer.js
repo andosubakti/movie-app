@@ -23,7 +23,7 @@ const searchMovieReducer = (state = initialState, action) => {
             return {
                 ...state,
                 loading: false,
-                error: action.payload,
+                error: true,
             };
         default:
             return state;

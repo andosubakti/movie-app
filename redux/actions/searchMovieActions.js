@@ -9,7 +9,6 @@ export const getSearchMoviesActionSuccess = (data) => ({
     payload: data,
 });
 
-export const getSearchMoviesActionError = (data) => ({
-    type: GET_SEARCH_MOVIES_ERROR,
-    payload: data,
+export const getSearchMoviesActionError = () => ({
+    type: GET_SEARCH_MOVIES_ERROR
 });

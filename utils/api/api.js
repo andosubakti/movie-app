@@ -10,7 +10,10 @@ export const apiRequest = async ({ url, method, timeout, headers, bodyRequest, p
     const config = {
         method,
         url: baseUrl + path,
-        params: mergedParams
+        params: mergedParams,
+        headers: {
+            Authorization : 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5NmY3ODZmNzM5YzI4YTY5YmFjODA1M2VhYjllMGFkYSIsInN1YiI6IjYzMTg0YmQzMWQxYmY0MDA3ZWEwNmU0NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.4w5Y2nP8rsc2_lIIDX27cFW2Xbs7MdGdKfrNxuMBypE'
+        }
     };
 
     if (headers) {

@@ -1,4 +1,4 @@
-import { GET_POPULAR_MOVIES, GET_POPULAR_MOVIES_SUCCESS, GET_POPULAR_MOVIES_ERROR } from "../types/popularMoviesType";
+import { GET_DETAIL_MOVIE, GET_DETAIL_MOVIE_ERROR, GET_DETAIL_MOVIE_SUCCESS } from "../types/detailMovieType";
 
 const initialState = {
     data: [],
@@ -6,20 +6,20 @@ const initialState = {
     loading: false,
 };
 
-const popularMoviesReducer = (state = initialState, action) => {
+const detailMovieReducer = (state = initialState, action) => {
     switch (action.type) {
-        case GET_POPULAR_MOVIES:
+        case GET_DETAIL_MOVIE:
             return {
                 ...state,
                 loading: true,
             };
-        case GET_POPULAR_MOVIES_SUCCESS:
+        case GET_DETAIL_MOVIE_SUCCESS:
             return {
                 ...state,
                 loading: false,
                 data: action.payload
             };
-        case GET_POPULAR_MOVIES_ERROR:
+        case GET_DETAIL_MOVIE_ERROR:
             return {
                 ...state,
                 loading: false,
@@ -30,4 +30,4 @@ const popularMoviesReducer = (state = initialState, action) => {
     }
 };
 
-export default popularMoviesReducer;
+export default detailMovieReducer;

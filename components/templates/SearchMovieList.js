@@ -67,9 +67,6 @@ const SearchMovieList = (value) => {
       }
     }, [page])
   
-    useEffect(() => {
-      console.log("yuhu data search", data)
-    }, [data])
     return (
         <Table 
             columns={columns} 

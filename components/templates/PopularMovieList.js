@@ -65,13 +65,9 @@ const PopularMovies = () => {
       ];
   
     useEffect(() => {
-        console.log("yuhu", page)
       dispatch(getPopularMoviesService(param))
     }, [page])
-  
-    useEffect(() => {
-      console.log("yuhu datanya", data)
-    }, [data])
+    
     return (
         <Table 
             columns={columns} 
