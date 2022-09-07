@@ -40,9 +40,11 @@
 }
 
 .title {
-  margin: 0;
+  margin: 10px;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
 }
 
 .title,
@@ -115,13 +117,13 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   .card,
   .footer {
     border-color: #222;
   }
   .code {
-    background: #111;
+    background: white;
   }
   .logo img {
     filter: invert(1);
